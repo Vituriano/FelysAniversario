@@ -1,0 +1,325 @@
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+@import url(https://fonts.googleapis.com/css?family=Cutive+Mono);
+@import url(https://fonts.googleapis.com/css?family=Nobile:400italic,700italic);
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+  box-sizing: border-box;
+}
+html * {
+  box-sizing: inherit;
+}
+
+*:before, *:after {
+  content: " ";
+}
+
+body {
+  overflow: hidden;
+  background-color: #456ddd;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  color: #fff;
+  font-family: 'Cutive Mono', sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+.card {
+  position:absolute;
+  top:100px;
+  left:50%;
+  margin-left: -175px;
+  width: 350px;
+  height: 470px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transition: all ease-in-out 1s;
+}
+.card .page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+.card .cover {
+  z-index: 2;
+  -webkit-transform: rotateY(-20deg);
+  transform: rotateY(-20deg);
+  transition: -webkit-transform ease-in-out 1.4s;
+  transition: transform ease-in-out 1.4s;
+  transition: transform ease-in-out 1.4s, -webkit-transform ease-in-out 1.4s;
+  z-index: 5;
+}
+.card .cover .content {
+  background-image: url(lys.jpg);
+  background-size: contain;
+  transform-style: preserve-3d;
+  transform-origin: 0% 50%;
+  transform: perspective(800px) rotateY(0deg);
+  transition: all 0.8s ease-in-out;
+  border: 10px solid #73BFB5;
+  backface-visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.card .cover:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: right bottom;
+  transform-origin: right bottom;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-transform: skew(-8deg) rotateX(-10deg);
+  transform: skew(-8deg) rotateX(-10deg);
+  z-index: -1;
+}
+.card button {
+
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ -webkit-transform: translate(-50%, -50%);
+ transform: translate(-50%, -50%);
+ cursor: pointer;
+ background: transparent;
+ border: 3px solid #fff;
+ color: #fff;
+ font-size: 20px;
+ padding: 0.5em 1.4em;
+}
+.card .cover button:focus {
+  outline: none;
+}
+
+.card .text-container {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+}
+
+.card .text-container #head {
+  font-family: 'Nobile', sans-serif;
+  font-size: 1.5em;
+  margin: 40px auto 40px auto;
+}
+#nenem{
+  font-family: 'Nobile', sans-serif;
+  font-size: 1.5em;
+}
+
+.card p {
+  font-size: 1.1em;
+  line-height: 1.4;
+  font-family: 'Nobile';
+  color: #fff;
+  font-style: italic;
+  text-align: justify;
+}
+.card .inside {
+  z-index: 1;
+  -webkit-transform: rotateY(-8deg);
+  transform: rotateY(-8deg);
+}
+.card .inside .content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #27292a;
+  z-index: 3;
+}
+.card .inside:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: right bottom;
+  transform-origin: right bottom;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-transform: skew(-8deg) rotateX(-10deg);
+  transform: skew(-8deg) rotateX(-10deg);
+  z-index: -1;
+}
+.card.open {
+  margin-left: 0;
+}
+.card.open .cover {
+  -webkit-transform: rotateY(-175deg);
+  transform: rotateY(-175deg);
+
+
+}
+.oiie{
+  visibility: hidden;
+  display: none;
+}
+/* galaxy S3, LG optimus L70, Microsoft Lumia 570, galaxy S5, pixel 2, ophone 5/se/6/7/8/plus,  */
+@media (min-height: 360px){
+  .card {
+    position:absolute;
+    top:45px;
+    left:50%;
+    margin-left: -175px;
+    width: 335px;
+    height: 450px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: all ease-in-out 1s;
+  }
+}
+
+@media (orientation: portrait){
+  .wrapper{
+    visibility: hidden;
+    display: none;
+  }
+  canvas{
+    visibility: hidden;
+    display: none;
+  }
+  .oiie{
+    vertical-align: middle;
+    content:"hello" ;
+    font-family:'Lobster Two', cursive;
+    display:block;
+    text-align:center;
+    font-size:150px;
+    font-weight:400;
+    letter-spacing: -2px;
+    position: absolute;
+    visibility: visible;
+    color: yellow;
+
+  }
+  .container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+  }
+  .box {
+    width: auto;
+    height: auto;
+  }
+}
+
+/* ipad */
+@media screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (min-height: 768px){
+  .card {
+    position:absolute;
+    top:140px;
+    left:50%;
+    margin-left: -175px;
+    width: 335px;
+    height: 450px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: all ease-in-out 1s;
+  }
+}
+/*iphone 4*/
+@media screen and (min-device-width: 480px) and (max-device-width: 480px) and (min-height: 320px){
+  .card {
+    position:absolute;
+    top:70px;
+    left:50%;
+    margin-left: -175px;
+    width: 372px;
+    height: 500px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: all ease-in-out 1s;
+  }
+  .card p {
+    font-size: 1.3em;
+    line-height: 1.4;
+    font-family: 'Nobile';
+    color: #fff;
+    font-style: italic;
+    text-align: justify;
+  }
+  #nenem{
+    font-family: 'Nobile', sans-serif;
+    font-size: 1.3em;
+  }
+}
+
+/*pixel 2 XL*/
+@media screen and (min-device-width: 823px) and (max-device-width: 823px) and (min-height: 411px){
+  .card {
+    position:absolute;
+    top:30px;
+    left:50%;
+    margin-left: -175px;
+    width: 305px;
+    height: 409px;  
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: all ease-in-out 1s;
+  }
+  .card p {
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: 'Nobile';
+    color: #fff;
+    font-style: italic;
+    text-align: justify;
+  }
+  .card .text-container #head {
+    font-family: 'Nobile', sans-serif;
+    font-size: 1.3em;
+    margin: 40px auto 40px auto;
+  }
+  #nenem{
+    font-family: 'Nobile', sans-serif;
+    font-size: 1.3em;
+  }
+}
+
+/*iphone X*/
+@media screen and (min-device-width: 812px) and (max-device-width: 812px) and (min-height: 375px){
+  .card {
+    position:absolute;
+    top:30px;
+    left:50%;
+    margin-left: -175px;
+    width: 285px;
+    height: 382px;  
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: all ease-in-out 1s;
+  }
+  .card p {
+    font-size: 0.9em;
+    line-height: 1.4;
+    font-family: 'Nobile';
+    color: #fff;
+    font-style: italic;
+    text-align: justify;
+  }
+  .card .text-container #head {
+    font-family: 'Nobile', sans-serif;
+    font-size: 1.1em;
+    margin: 40px auto 40px auto;
+  }
+  #nenem{
+    font-family: 'Nobile', sans-serif;
+    font-size: 1.1em;
+  }
+}

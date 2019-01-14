@@ -1,0 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster+Two);
+
+body {
+	font-family: 'Lobster Two', cursive;
+	background: #ffe8e8 ;
+	content:"hi";
+	display:block;  
+	margin: 0px;
+}
+.fonte{
+	content:"hello" ;
+	font-family:'Lobster Two', cursive;
+	display:block;
+	text-align:center;
+	font-size:150px;
+	font-weight:400;
+	letter-spacing: -2px;
+}
+.container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center
+}
+.box {
+	width: auto;
+	height: auto;
+}
