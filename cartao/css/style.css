@@ -11,9 +11,6 @@ html * {
   box-sizing: inherit;
 }
 
-*:before, *:after {
-  content: " ";
-}
 
 body {
   background-color: #456ddd;
@@ -22,6 +19,8 @@ body {
   font-family: 'Cutive Mono', sans-serif;
   margin: 0;
   text-align: center;
+  content:"hi";
+	display:block;
 }
 
 .card {
