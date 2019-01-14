@@ -6,6 +6,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizelegibility;
   box-sizing: border-box;
+  height: 100%;
 }
 html * {
   box-sizing: inherit;
