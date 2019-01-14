@@ -175,7 +175,7 @@ body {
     left:50%;
     margin-left: -175px;
     width: 328px;
-    height: 1px;
+    height: 440px;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     transition: all ease-in-out 1s;
@@ -187,12 +187,10 @@ body {
     color: #fff;
     font-style: italic;
     text-align: justify;
-    background-color: #FFF;
   }
   #nenem{
     font-family: 'Nobile', sans-serif;
     font-size: 1.4em;
-    background-color: #FFF;
   }
 }
 
