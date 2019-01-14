@@ -168,21 +168,21 @@ body {
   display: none;
 }
 /* galaxy S3, LG optimus L70, Microsoft Lumia 570, galaxy S5, pixel 2, ophone 5/se/6/7/8/plus,  */
-@media (min-height: 360px){
   .card {
     position:absolute;
     top:45px;
     left:50%;
     margin-left: -175px;
-    width: 328px;
-    height: 440px;
+    width: 298px;
+    height: 399px;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     transition: all ease-in-out 1s;
+
   }
   .card p {
-    font-size: 1.1em;
-    line-height: 1.4;
+    font-size: 1em;
+    line-height: 1.3;
     font-family: 'Nobile';
     color: #fff;
     font-style: italic;
