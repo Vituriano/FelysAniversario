@@ -1,15 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Righteous);
 @import url(https://fonts.googleapis.com/css?family=Cutive+Mono);
 @import url(https://fonts.googleapis.com/css?family=Nobile:400italic,700italic);
-html {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizelegibility;
-  box-sizing: border-box;
-}
-html * {
-  box-sizing: inherit;
-}
 
 
 body {
