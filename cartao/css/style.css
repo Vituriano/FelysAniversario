@@ -174,11 +174,23 @@ body {
     top:45px;
     left:50%;
     margin-left: -175px;
-    width: 335px;
-    height: 450px;
+    width: 328px;
+    height: 440px;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
     transition: all ease-in-out 1s;
+  }
+  .card p {
+    font-size: 1.1em;
+    line-height: 1.4;
+    font-family: 'Nobile';
+    color: #fff;
+    font-style: italic;
+    text-align: justify;
+  }
+  #nenem{
+    font-family: 'Nobile', sans-serif;
+    font-size: 1.4em;
   }
 }
 
