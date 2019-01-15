@@ -24,11 +24,8 @@ body {
   perspective: 1000px;
 }
 
-.haha {
-  margin: 100px;
-}
-
 .card {
+  margin: 50px;
   position:absolute;
   bottom:100px;
   left:50%;
