@@ -35,7 +35,6 @@ body {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   transition: all ease-in-out 1s;
-  clear: both;
 }
 .card .page {
   position: absolute;
