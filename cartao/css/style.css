@@ -15,13 +15,16 @@ html * {
 
 body {
   background-color: #456ddd;
-  perspective: 1000px;
   color: #fff;
   font-family: 'Cutive Mono', sans-serif;
   margin: 0;
   text-align: center;
   content:"hi";
   display:block;
+}
+
+.haha {
+  perspective: 1000px;
 }
 
 .card {
