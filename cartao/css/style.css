@@ -21,10 +21,11 @@ body {
   text-align: center;
   content:"hi";
   display:block;
+  perspective: 1000px;
 }
 
 .haha {
-  perspective: 1000px;
+  margin: 50px 50px;
 }
 
 .card {
