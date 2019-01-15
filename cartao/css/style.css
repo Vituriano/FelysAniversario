@@ -11,16 +11,15 @@ html {
 html * {
   box-sizing: inherit;
 }
-
+*:before, *:after {
+  content: " ";
+}
 
 body {
   background-color: #456ddd;
   color: #fff;
-  font-family: 'roboto', sans-serif;
   margin: 0;
   text-align: center;
-  content:"hi";
-  display:block;
   perspective: 1000px;
 }
 
