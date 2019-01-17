@@ -124,7 +124,7 @@ body {
   color: #fff;
   font-style: italic;
   text-align: justify;
-  margin: 10px;
+  margin-bottom: 20px;
 }
 .card .inside {
   z-index: 1;
