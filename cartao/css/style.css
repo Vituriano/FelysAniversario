@@ -110,7 +110,7 @@ body {
 .card .text-container #head {
   font-family: 'Nobile', sans-serif;
   font-size: 1.3em;
-  margin: 20px auto;
+  margin: 20px auto 20px auto;
 }
 #nenem{
   font-family: 'Nobile', sans-serif;
@@ -124,7 +124,7 @@ body {
   color: #fff;
   font-style: italic;
   text-align: justify;
-  margin:0;
+  margin: 10px;
 }
 .card .inside {
   z-index: 1;
