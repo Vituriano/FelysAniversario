@@ -182,6 +182,7 @@ body {
   }
   .card p {
     font-size: 1em;
+    line-height: 1.2;
     font-family: 'Nobile';
     color: #fff;
     font-style: italic;
