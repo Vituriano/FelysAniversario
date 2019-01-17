@@ -110,7 +110,7 @@ body {
 .card .text-container #head {
   font-family: 'Nobile', sans-serif;
   font-size: 1.3em;
-  margin: 10px auto;
+  margin: 20px auto;
 }
 #nenem{
   font-family: 'Nobile', sans-serif;
@@ -118,8 +118,8 @@ body {
 }
 
 .card p {
-  font-size: 1em;
-  line-height: 1;
+  font-size: 0.7em;
+  line-height:0;
   font-family: 'Nobile';
   color: #fff;
   font-style: italic;
