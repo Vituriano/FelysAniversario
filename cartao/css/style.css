@@ -120,8 +120,8 @@ body {
 }
 
 .card p {
-  font-size: 0.6em;
-  line-height:0.6;
+  font-size: 1em;
+  line-height: 0.8;
   font-family: 'Nobile';
   color: #fff;
   font-style: italic;
@@ -184,7 +184,7 @@ body {
   }
   .card p {
     font-size: 1em;
-    line-height:0.1;
+    line-height:0.8;
     font-family: 'Nobile';
     color: #fff;
     font-style: italic;
